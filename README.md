@@ -36,5 +36,17 @@ S`eT-It`em('V'+'aR'+'IA'+('blE:1'+'q2')+('uZ'+'x'))([TYpE]("{1}{0}"-F'F','rE'));
 
 =============================================================
 
-It is recommended to validate and sanitize file uploads, enforce strict file type restrictions, and store files outside the web root to mitigate malicious file upload vulnerabilities.
+It is recommended to validate and sanitize the Host header in all incoming requests to prevent host header injection vulnerabilities.
+
+It is recommended to ensure consistent HTTP request parsing across all server components to prevent HTTP request smuggling attacks.
+
+It is recommended to implement secure session management practices, including setting appropriate session timeouts and ensuring session tokens are unique and securely generated.
+
+CSRF: It is recommended to implement CSRF tokens and validate them on the server side to prevent cross-site request forgery attacks.
+
+Content Spoofing: It is recommended to validate and sanitize all user inputs and encode output to prevent content spoofing vulnerabilities.
+
+Misconfigured CSP: It is recommended to configure a strict Content Security Policy (CSP) without using unsafe-inline or unsafe-eval to enhance security.
+
+Improper Input Validation: It is recommended to validate and sanitize all user inputs on both client and server sides to prevent improper input validation vulnerabilities.
 
