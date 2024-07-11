@@ -36,4 +36,10 @@ S`eT-It`em('V'+'aR'+'IA'+('blE:1'+'q2')+('uZ'+'x'))([TYpE]("{1}{0}"-F'F','rE'));
 
 =============================================================
 
-To mitigate the risks associated with a misconfigured CSP, it is crucial to eliminate the use of unsafe-inline. Instead, use nonce-based or hash-based approaches to manage inline scripts and styles securely. This involves assigning a unique nonce or hash to each script and style block, ensuring only authorized content is executed. Regularly review and update the CSP to adapt to new security threats and ensure comprehensive coverage. Additionally, conduct thorough testing to confirm that the updated CSP does not inadvertently block legitimate content. By adhering to these practices, the security posture of the web application can be significantly strengthened.
+Description: Improper input validation occurs when an application fails to adequately check and sanitize user inputs. This can lead to the introduction of malicious data that the application mistakenly processes, resulting in various types of vulnerabilities such as SQL injection, cross-site scripting (XSS), buffer overflows, and more.
+
+Impact: The impact of improper input validation can be severe, compromising the confidentiality, integrity, and availability of an application. Attackers can exploit these vulnerabilities to inject malicious code, gain unauthorized access to data, alter or delete records, and disrupt services. This can lead to data breaches, financial losses, reputational damage, and legal consequences for the affected organization.
+
+Remediation: To mitigate the risks associated with improper input validation, it is essential to implement robust validation and sanitization mechanisms across all user inputs. Use server-side validation in addition to client-side checks to ensure that data is validated and sanitized before processing. Employ whitelists to allow only expected input formats and lengths, and use parameterized queries or prepared statements to prevent SQL injection. Regular security testing and code reviews should be conducted to identify and remediate potential input validation weaknesses. Educating developers on secure coding practices is also crucial to maintaining a secure development environment.
+
+
