@@ -36,17 +36,5 @@ S`eT-It`em('V'+'aR'+'IA'+('blE:1'+'q2')+('uZ'+'x'))([TYpE]("{1}{0}"-F'F','rE'));
 
 =============================================================
 
-Operational Risk:
-
-Privilege Escalation: This can lead to unauthorized access and misuse of system resources, disrupting operational integrity.
-Malicious File Upload Vulnerability: Can result in the compromise of server resources and data integrity, impacting operational availability.
-Host Header Injection: Can lead to request manipulation and unauthorized access, disrupting application functionality and availability.
-HTTP Request Smuggling: Can manipulate request handling, leading to potential data corruption or unauthorized access.
-Improper Session Management: Can result in unauthorized access and session hijacking, disrupting user activities and application functionality.
-Content Spoofing: Can deceive users with misleading content, potentially damaging user trust and application reputation.
-Regulatory/Compliance Risk:
-
-CSRF (Cross-Site Request Forgery): Non-compliance with standards that mandate protection against unauthorized actions performed on behalf of users.
-Misconfigured CSP (Content Security Policy): Non-compliance with security standards that require secure configurations to protect user data and prevent security breaches.
-Improper Input Validation: Non-compliance with data protection standards (e.g., PCI DSS) due to vulnerabilities that expose sensitive information to unauthorized access.
+Improper session management occurs when an application fails to securely handle user sessions, which can lead to vulnerabilities such as session hijacking, fixation, or unauthorized access. This includes issues like inadequate session expiration, predictable session IDs, and lack of secure attributes for session cookies.
 
