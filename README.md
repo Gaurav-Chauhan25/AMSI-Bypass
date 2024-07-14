@@ -36,5 +36,8 @@ S`eT-It`em('V'+'aR'+'IA'+('blE:1'+'q2')+('uZ'+'x'))([TYpE]("{1}{0}"-F'F','rE'));
 
 =============================================================
 
-Improper session management occurs when an application fails to securely handle user sessions, which can lead to vulnerabilities such as session hijacking, fixation, or unauthorized access. This includes issues like inadequate session expiration, predictable session IDs, and lack of secure attributes for session cookies.
+Vulnerable and Outdated Components: It is recommended to regularly update and patch all software components to their latest secure versions.
 
+Application Version Disclosure: It is recommended to obscure or remove application version information from responses to prevent attackers from exploiting known vulnerabilities.
+
+Insecure Methods Allowed: It is recommended to disable insecure HTTP methods and only allow necessary and secure methods like GET and POST.
