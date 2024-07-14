@@ -36,19 +36,8 @@ S`eT-It`em('V'+'aR'+'IA'+('blE:1'+'q2')+('uZ'+'x'))([TYpE]("{1}{0}"-F'F','rE'));
 
 =============================================================
 
-Operational Risk:
 
-Privilege Escalation: Leads to unauthorized access and misuse of system resources, disrupting operational integrity.
-Malicious File Upload Vulnerability: Compromises server resources and data integrity, impacting operational availability.
-Host Header Injection: Allows request manipulation and unauthorized access, disrupting application functionality and availability.
-HTTP Request Smuggling: Manipulates request handling, leading to potential data corruption or unauthorized access.
-Improper Session Management: Results in unauthorized access and session hijacking, disrupting user activities and application functionality.
-Content Spoofing: Deceives users with misleading content, potentially damaging user trust and application reputation.
-Improper Input Validation: Allows various attacks (e.g., SQL injection, XSS), compromising data integrity and availability.
-Application Version Disclosure: Exposes known vulnerabilities, potentially leading to targeted attacks and operational disruptions.
-Insecure Methods Allowed: Enables unauthorized actions, compromising data integrity and availability, and potentially leading to application downtime.
-Regulatory/Compliance Risk:
+Operational Risks: The application faces risks like privilege escalation, malicious file uploads compromising data integrity, host header injection, and HTTP request smuggling allowing unauthorized access. Improper session management can lead to session hijacking, disrupting user activities, while content spoofing damages user trust. Application version disclosure exposes vulnerabilities, enabling targeted attacks. Insecure methods and improper input validation pose threats of unauthorized actions and severe impacts on data integrity and availability.
 
-CSRF (Cross-Site Request Forgery): Non-compliance with standards mandating protection against unauthorized actions performed on behalf of users.
-Misconfigured CSP (Content Security Policy): Non-compliance with security standards requiring secure configurations to protect user data and prevent security breaches.
-Vulnerable and Outdated Components: Non-compliance with regulatory requirements mandating the use of supported and secure software versions.
+Compliance Risks: Compliance risks include CSRF vulnerabilities, misconfigured CSP violating security standards, and use of vulnerable components breaching regulations on software security. Improper input validation risks non-compliance with data protection standards like PCI DSS, exposing sensitive data to unauthorized access. Addressing these risks is essential to maintain regulatory compliance, protect user data, and avoid legal and financial consequences.
+
