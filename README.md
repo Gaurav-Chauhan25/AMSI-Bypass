@@ -36,18 +36,14 @@ S`eT-It`em('V'+'aR'+'IA'+('blE:1'+'q2')+('uZ'+'x'))([TYpE]("{1}{0}"-F'F','rE'));
 
 =============================================================
 
-### Misconfigured CSP
+Insecure Direct Object Reference (IDOR) via Transaction ID Manipulation
+Description: Insecure Direct Object Reference (IDOR) via transaction ID manipulation occurs when an application fails to properly authorize access to transaction data. By altering the transaction ID in the URL or request parameters, an attacker can access other users' transaction data, which should not be visible to them.
 
-**Description**: The Content Security Policy (CSP) is misconfigured, with only `frame-ancestors 'self'` set, while critical directives like `object-src` and `script-src` are missing. This incomplete configuration leaves the application vulnerable to various attacks, such as cross-site scripting (XSS) and plugin-based attacks.
+Impact: This vulnerability can lead to unauthorized access to sensitive financial information, privacy violations, and potential regulatory non-compliance. Attackers can exploit this to view, modify, or manipulate transaction data of other users, leading to severe data breaches and loss of user trust.
 
-**Impact**: Without `script-src`, the application is exposed to the risk of executing malicious scripts, leading to XSS attacks. The absence of `object-src` means potentially dangerous plugins and embedded content can be loaded, increasing the risk of malicious code execution and data breaches.
+Remediation: Implement strict authorization checks to verify that the requesting user has permission to access the specified transaction. Use indirect references or opaque identifiers for transactions instead of direct IDs. Regularly review and test the application for IDOR vulnerabilities.
 
-**Remediation**: Update the CSP to include comprehensive directives. Set `script-src 'self'` to restrict script sources and `object-src 'none'` to block all plugin content. Regularly review and update the CSP to address new threats and vulnerabilities.
+Reference:
 
-**Reference**:
-- [OWASP Content Security Policy](https://owasp.org/www-project-secure-headers/#content-security-policy)
-- [Mozilla Developer Network - CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
-
-**One-liner recommendation**: "It is recommended to fully configure CSP by setting `script-src` and `object-src` directives to enhance security."
-
-Content-Security-Policy: default-src 'self'; script-src 'self' 'nonce-random123' https://trusted-scripts.example.com; object-src 'none'; frame-ancestors 'self';
+OWASP IDOR
+One-liner recommendation: "It is recommended to implement strict authorization checks and use indirect references for transaction IDs to prevent IDOR vulnerabilities."
