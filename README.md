@@ -61,16 +61,4 @@ Invoke-Expression $decodedContent
 
 =============================================================
 
-Insecure Direct Object Reference (IDOR) via Transaction ID Manipulation
-Description: Insecure Direct Object Reference (IDOR) via transaction ID manipulation occurs when an application fails to properly authorize access to transaction data. By altering the transaction ID in the URL or request parameters, an attacker can access other users' transaction data, which should not be visible to them.
-
-Impact: This vulnerability can lead to unauthorized access to sensitive financial information, privacy violations, and potential regulatory non-compliance. Attackers can exploit this to view, modify, or manipulate transaction data of other users, leading to severe data breaches and loss of user trust.
-
-Remediation: Implement strict authorization checks to verify that the requesting user has permission to access the specified transaction. Use indirect references or opaque identifiers for transactions instead of direct IDs. Regularly review and test the application for IDOR vulnerabilities.
-
-Implement strict authorization checks to ensure that the requesting user has permission to access the specified transaction. Use indirect references or opaque identifiers for transaction IDs instead of direct IDs. Secure URL and API endpoints to prevent exposure of sensitive information. Validate and sanitize all input parameters to prevent manipulation. Employ session tokens and access control mechanisms, such as ACLs or RBAC, to manage permissions.
-
-Reference:
-
-OWASP IDOR
-One-liner recommendation: "It is recommended to implement strict authorization checks and use indirect references for transaction IDs to prevent IDOR vulnerabilities."
+https://github.com/ELMERIKH/Needle/tree/main
