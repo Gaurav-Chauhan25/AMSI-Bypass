@@ -1,0 +1,8 @@
+# Read the base64 string from the file
+$base64String = Get-Content -Path "outputfile.b64"
+
+# Convert the base64 string back to bytes
+$fileContent = [Convert]::FromBase64String($base64String)
+
+# Write the bytes to a new file
+[System.IO.File]::WriteAllBytes("decodedfile", $fileContent)
