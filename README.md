@@ -67,3 +67,11 @@ Invoke-Expression $decodedContent
 
 https://github.com/ELMERIKH/Needle/tree/main
 https://docs.netapp.com/us-en/ontap-cli-97/application-provisioning-config-modify.html#description
+
+Data Exfiltration via Malicious Scripts
+
+Description: Data exfiltration occurs when malicious scripts, such as PowerUp and PowerView, are used to scan and extract data from an Active Directory (AD) environment. These scripts can enumerate users, groups, permissions, and other sensitive information, which attackers can then exfiltrate.
+
+Impact: Unauthorized access to and exfiltration of AD data can lead to significant data breaches, exposing sensitive organizational information, compromising system integrity, and facilitating further attacks. This can result in severe financial losses, reputational damage, legal penalties, and loss of customer trust.
+
+Remediation: Implement robust monitoring and alerting for unusual script activities and data access patterns. Use endpoint protection and detection systems to block and alert on the execution of known malicious scripts. Regularly audit and restrict administrative privileges. Educate employees about the risks of malicious scripts and enforce strict execution policies.
