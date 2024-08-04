@@ -77,3 +77,8 @@ Impact: Unauthorized access to and exfiltration of AD data can lead to significa
 Remediation: Implement robust monitoring and alerting for unusual script activities and data access patterns. Use endpoint protection and detection systems to block and alert on the execution of known malicious scripts. Regularly audit and restrict administrative privileges. Educate employees about the risks of malicious scripts and enforce strict execution policies.
 
 Implement script whitelisting with AppLocker or Windows Defender Application Control to ensure only trusted and signed scripts are executed, monitor encoding/decoding activities, and use EDR solutions to detect and block suspicious script execution. Restrict PowerShell usage with Constrained Language Mode and enable logging. Segment networks to limit lateral movement and regularly train employees to recognize and report suspicious activities.
+
+
+https://www.fortinet.com/resources/cyberglossary/data-exfiltration
+https://www.forcepoint.com/blog/insights/data-exfiltration-prevention-phi-pii
+https://www.sans.org/webcasts/detect-prevent-data-exfiltration-unique-approach-infoblox-104985/
