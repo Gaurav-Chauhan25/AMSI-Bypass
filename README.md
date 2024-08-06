@@ -78,6 +78,9 @@ Remediation: Implement robust monitoring and alerting for unusual script activit
 
 Implement script whitelisting with AppLocker or Windows Defender Application Control to ensure only trusted and signed scripts are executed, monitor encoding/decoding activities, and use EDR solutions to detect and block suspicious script execution. Restrict PowerShell usage with Constrained Language Mode and enable logging. Segment networks to limit lateral movement and regularly train employees to recognize and report suspicious activities.
 
+To mitigate Slowloris attacks, configure your web server to limit the number of connections from a single IP address, set shorter timeouts for incomplete connections, use reverse proxies, and employ web application firewalls (WAF) to detect and block malicious traffic. Implementing rate limiting and connection throttling can also help mitigate this type of attack.
+
+Implement connection limits, shorter timeouts, reverse proxies, WAF, rate limiting, and connection throttling to mitigate Slowloris attacks.
 
 https://www.fortinet.com/resources/cyberglossary/data-exfiltration
 https://www.forcepoint.com/blog/insights/data-exfiltration-prevention-phi-pii
